@@ -11,8 +11,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 240, 240, 240;
+    --background-end-rgb: 250, 250, 250;
   }
 }
 
@@ -30,4 +30,60 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.tailwind-test {
+  border: 5px solid red;
+}
+
+.play-button,
+.pause-button,
+.resume-button,
+.stop-button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 8px;
+}
+
+.play-button {
+  background-color: #3b82f6;
+}
+
+.play-button:hover {
+  background-color: #2563eb;
+}
+
+.pause-button,
+.resume-button {
+  background-color: #f59e0b;
+}
+
+.pause-button:hover,
+.resume-button:hover {
+  background-color: #d97706;
+}
+
+.stop-button {
+  background-color: #ef4444;
+}
+
+.stop-button:hover {
+  background-color: #dc2626;
+}
+
+.pause-button svg,
+.resume-button svg,
+.stop-button svg {
+  font-size: 24px;
+  margin-bottom: 4px;
 }
