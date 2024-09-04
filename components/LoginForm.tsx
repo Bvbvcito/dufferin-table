@@ -31,7 +31,7 @@ export default function LoginForm({ onLogin }: LoginFormProps) {
           className="w-full p-2 mb-4 text-gray-800 border rounded pr-10"
         />
         <button
-          type="button"
+          type="button1"
           onClick={() => setShowPassword(!showPassword)}
           className="absolute right-2 top-2 text-gray-600"
         >
