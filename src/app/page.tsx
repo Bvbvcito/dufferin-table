@@ -15,6 +15,9 @@ export default function Home() {
     return (
       <main className="min-h-screen flex justify-center items-center">
         <LoginForm onLogin={() => setIsAuthenticated(true)} />
+        <div className="text-black bg-orange-500">
+          {process.env.NEXT_PUBLIC_TEST_VARIABLE}
+        </div>
       </main>
     );
   }
