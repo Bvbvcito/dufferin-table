@@ -32,10 +32,6 @@ body {
   }
 }
 
-.tailwind-test {
-  border: 5px solid red;
-}
-
 .play-button,
 .pause-button,
 .resume-button,
